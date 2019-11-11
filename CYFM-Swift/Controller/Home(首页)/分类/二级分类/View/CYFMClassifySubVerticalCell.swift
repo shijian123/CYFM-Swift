@@ -33,7 +33,6 @@ class CYFMClassifySubVerticalCell: UICollectionViewCell {
         return lab
     }()
     
-    
     private var subLab: UILabel = {
         let lab = UILabel()
         lab.font = UIFont.systemFont(ofSize: 15)
@@ -68,7 +67,7 @@ class CYFMClassifySubVerticalCell: UICollectionViewCell {
     }()
     
     override init(frame: CGRect) {
-        super.init()
+        super.init(frame: frame)
         setupLayout()
     }
     

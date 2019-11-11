@@ -81,6 +81,17 @@
 		B49AAB632351B289007FD8DC /* CYFM_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49AAB622351B289007FD8DC /* CYFM_SwiftTests.swift */; };
 		B49AAB6E2351B289007FD8DC /* CYFM_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49AAB6D2351B289007FD8DC /* CYFM_SwiftUITests.swift */; };
 		B49AABA92351BF78007FD8DC /* CYFMConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49AABA82351BF78007FD8DC /* CYFMConst.swift */; };
+		B4C7CD9F2374141300FF6A2D /* CYFMPlayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CD9E2374141300FF6A2D /* CYFMPlayAPI.swift */; };
+		B4C7CDA12374143000FF6A2D /* CYFMPlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDA02374143000FF6A2D /* CYFMPlayModel.swift */; };
+		B4C7CDA52374145100FF6A2D /* CYFMPlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDA42374145100FF6A2D /* CYFMPlayViewModel.swift */; };
+		B4C7CDA72374147B00FF6A2D /* CYFMPlayDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDA62374147B00FF6A2D /* CYFMPlayDetailController.swift */; };
+		B4C7CDA92374149F00FF6A2D /* CYFMPlayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDA82374149F00FF6A2D /* CYFMPlayCell.swift */; };
+		B4C7CDAB237414B400FF6A2D /* CYFMPlayCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDAA237414B400FF6A2D /* CYFMPlayCommentCell.swift */; };
+		B4C7CDAD237414C900FF6A2D /* CYFMPlayCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDAC237414C900FF6A2D /* CYFMPlayCircleCell.swift */; };
+		B4C7CDAF237414DB00FF6A2D /* CYFMPlayAnchorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDAE237414DB00FF6A2D /* CYFMPlayAnchorCell.swift */; };
+		B4C7CDB12374150600FF6A2D /* CYFMPlayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDB02374150600FF6A2D /* CYFMPlayHeaderView.swift */; };
+		B4C7CDB32374151A00FF6A2D /* CYFMPlayFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDB22374151A00FF6A2D /* CYFMPlayFooterView.swift */; };
+		B4C7CDBA2376954300FF6A2D /* CYFMHelperTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CDB92376954300FF6A2D /* CYFMHelperTool.swift */; };
 		B4CA798E236AC48C006DFEAC /* CYFMClassifySubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA798D236AC48C006DFEAC /* CYFMClassifySubHeaderView.swift */; };
 		B4CA7990236AC4A2006DFEAC /* CYFMClassifySubFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA798F236AC4A2006DFEAC /* CYFMClassifySubFooterView.swift */; };
 		B4CA7992236AC4E2006DFEAC /* CYFMClassifySubModuleType19Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA7991236AC4E2006DFEAC /* CYFMClassifySubModuleType19Cell.swift */; };
@@ -189,6 +200,17 @@
 		B49AAB6D2351B289007FD8DC /* CYFM_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFM_SwiftUITests.swift; sourceTree = "<group>"; };
 		B49AAB6F2351B289007FD8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49AABA82351BF78007FD8DC /* CYFMConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMConst.swift; sourceTree = "<group>"; };
+		B4C7CD9E2374141300FF6A2D /* CYFMPlayAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayAPI.swift; sourceTree = "<group>"; };
+		B4C7CDA02374143000FF6A2D /* CYFMPlayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayModel.swift; sourceTree = "<group>"; };
+		B4C7CDA42374145100FF6A2D /* CYFMPlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayViewModel.swift; sourceTree = "<group>"; };
+		B4C7CDA62374147B00FF6A2D /* CYFMPlayDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayDetailController.swift; sourceTree = "<group>"; };
+		B4C7CDA82374149F00FF6A2D /* CYFMPlayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayCell.swift; sourceTree = "<group>"; };
+		B4C7CDAA237414B400FF6A2D /* CYFMPlayCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayCommentCell.swift; sourceTree = "<group>"; };
+		B4C7CDAC237414C900FF6A2D /* CYFMPlayCircleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayCircleCell.swift; sourceTree = "<group>"; };
+		B4C7CDAE237414DB00FF6A2D /* CYFMPlayAnchorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayAnchorCell.swift; sourceTree = "<group>"; };
+		B4C7CDB02374150600FF6A2D /* CYFMPlayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayHeaderView.swift; sourceTree = "<group>"; };
+		B4C7CDB22374151A00FF6A2D /* CYFMPlayFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMPlayFooterView.swift; sourceTree = "<group>"; };
+		B4C7CDB92376954300FF6A2D /* CYFMHelperTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHelperTool.swift; sourceTree = "<group>"; };
 		B4CA798D236AC48C006DFEAC /* CYFMClassifySubHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMClassifySubHeaderView.swift; sourceTree = "<group>"; };
 		B4CA798F236AC4A2006DFEAC /* CYFMClassifySubFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMClassifySubFooterView.swift; sourceTree = "<group>"; };
 		B4CA7991236AC4E2006DFEAC /* CYFMClassifySubModuleType19Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMClassifySubModuleType19Cell.swift; sourceTree = "<group>"; };
@@ -516,6 +538,7 @@
 		B40E8BDE2355AD660026F1FF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B4C7CDA42374145100FF6A2D /* CYFMPlayViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -523,6 +546,12 @@
 		B40E8BDF2355AD7A0026F1FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4C7CDA82374149F00FF6A2D /* CYFMPlayCell.swift */,
+				B4C7CDAA237414B400FF6A2D /* CYFMPlayCommentCell.swift */,
+				B4C7CDAC237414C900FF6A2D /* CYFMPlayCircleCell.swift */,
+				B4C7CDAE237414DB00FF6A2D /* CYFMPlayAnchorCell.swift */,
+				B4C7CDB02374150600FF6A2D /* CYFMPlayHeaderView.swift */,
+				B4C7CDB22374151A00FF6A2D /* CYFMPlayFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -530,6 +559,7 @@
 		B40E8BE02355AD820026F1FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B4C7CDA02374143000FF6A2D /* CYFMPlayModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -537,6 +567,7 @@
 		B40E8BE12355AD8A0026F1FF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B4C7CD9E2374141300FF6A2D /* CYFMPlayAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -544,6 +575,7 @@
 		B40E8BE22355AD910026F1FF /* 播放详情 */ = {
 			isa = PBXGroup;
 			children = (
+				B4C7CDA62374147B00FF6A2D /* CYFMPlayDetailController.swift */,
 			);
 			path = "播放详情";
 			sourceTree = "<group>";
@@ -935,6 +967,7 @@
 			isa = PBXGroup;
 			children = (
 				B49AABA82351BF78007FD8DC /* CYFMConst.swift */,
+				B4C7CDB92376954300FF6A2D /* CYFMHelperTool.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1232,9 +1265,11 @@
 			files = (
 				B4CA7990236AC4A2006DFEAC /* CYFMClassifySubFooterView.swift in Sources */,
 				B40B4AC923580BCB00171ECF /* CYRecommendLiveCell.swift in Sources */,
+				B4C7CDA92374149F00FF6A2D /* CYFMPlayCell.swift in Sources */,
 				B40E8BF32355AE6C0026F1FF /* CYReplicatorLayer.swift in Sources */,
 				B462EA04236823180031EAEA /* CYFMClassifySubMenuModel.swift in Sources */,
 				B40E8BEA2355ADF40026F1FF /* WRNavigationBar.swift in Sources */,
+				B4C7CDAF237414DB00FF6A2D /* CYFMPlayAnchorCell.swift in Sources */,
 				B40E8CC32356B05B0026F1FF /* CYFMHomeRecommendController.swift in Sources */,
 				B462EA08236823510031EAEA /* CYFMClassifySubCategoryCell.swift in Sources */,
 				B49AABA92351BF78007FD8DC /* CYFMConst.swift in Sources */,
@@ -1251,6 +1286,8 @@
 				B40B4AAF23580A8000171ECF /* CYFMRecommendHeaderView.swift in Sources */,
 				B40E8BDD2355AD5E0026F1FF /* CYFMPlayController.swift in Sources */,
 				B462E9F82366EF590031EAEA /* CYFMHomeClassifyCell.swift in Sources */,
+				B4C7CDA72374147B00FF6A2D /* CYFMPlayDetailController.swift in Sources */,
+				B4C7CDBA2376954300FF6A2D /* CYFMHelperTool.swift in Sources */,
 				B462E9FA2366F2670031EAEA /* CYFMHomeClassifyViewModel.swift in Sources */,
 				B40E8BBB2355A3850026F1FF /* CYFMIrregularityBasicContentView.swift in Sources */,
 				B40B4AAD23571C3E00171ECF /* CYFMHomeGuessYouLikeMoreController.swift in Sources */,
@@ -1260,6 +1297,7 @@
 				B4CA799C236AC58E006DFEAC /* CYFMClassifySubHeaderCell.swift in Sources */,
 				B40E8BF52355AF0D0026F1FF /* CYFMCustomLabel.swift in Sources */,
 				B40E8BEC2355ADF40026F1FF /* WRProxy.swift in Sources */,
+				B4C7CDA12374143000FF6A2D /* CYFMPlayModel.swift in Sources */,
 				B49AAB4C2351B286007FD8DC /* AppDelegate.swift in Sources */,
 				B40E8BBD2355ABCE0026F1FF /* CYBaseController.swift in Sources */,
 				B40B4AC123580B7800171ECF /* CYFMAdvertCell.swift in Sources */,
@@ -1268,7 +1306,10 @@
 				B462EA0E236823920031EAEA /* CYFMClassifySubModuleType20Cell.swift in Sources */,
 				B462EA06236823320031EAEA /* CYFMClassifySubRecommendViewModel.swift in Sources */,
 				B40E8C922355CF080026F1FF /* CYFMMineController.swift in Sources */,
+				B4C7CDA52374145100FF6A2D /* CYFMPlayViewModel.swift in Sources */,
+				B4C7CDAD237414C900FF6A2D /* CYFMPlayCircleCell.swift in Sources */,
 				B40E8C9D2355E1E30026F1FF /* CYFMFindModel.swift in Sources */,
+				B4C7CD9F2374141300FF6A2D /* CYFMPlayAPI.swift in Sources */,
 				B4CA7992236AC4E2006DFEAC /* CYFMClassifySubModuleType19Cell.swift in Sources */,
 				B40E8BEE2355ADF40026F1FF /* WRCycleCell.swift in Sources */,
 				B4CA7998236AC510006DFEAC /* CYFMClassifySubModuleType16Cell.swift in Sources */,
@@ -1284,10 +1325,12 @@
 				B40B4AB923580B1300171ECF /* CYFMRecommendGuessLikeCell.swift in Sources */,
 				B49AAB4E2351B286007FD8DC /* SceneDelegate.swift in Sources */,
 				B462EA0A2368236B0031EAEA /* CYFMClassifySubHorizontalCell.swift in Sources */,
+				B4C7CDAB237414B400FF6A2D /* CYFMPlayCommentCell.swift in Sources */,
 				B462E9F42366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift in Sources */,
 				B462E9FE236822D60031EAEA /* CYFMClassifySubContentController.swift in Sources */,
 				B40E8BC62355AC510026F1FF /* CYFMHomeController.swift in Sources */,
 				B40B4AB123580A9500171ECF /* CYFMRecommendFooterView.swift in Sources */,
+				B4C7CDB12374150600FF6A2D /* CYFMPlayHeaderView.swift in Sources */,
 				B40E8BED2355ADF40026F1FF /* WRCycleScrollView.swift in Sources */,
 				B40E8BF72355BA3E0026F1FF /* CYRefresh.swift in Sources */,
 				B4CA798E236AC48C006DFEAC /* CYFMClassifySubHeaderView.swift in Sources */,
@@ -1296,6 +1339,7 @@
 				B40B4AB723580AE500171ECF /* CYFMRecommendNewsCell.swift in Sources */,
 				B462E9EE2366E6380031EAEA /* CYFMHomeClassifyAPI.swift in Sources */,
 				B40E8BB92355A3520026F1FF /* CYFMBouncesContentView.swift in Sources */,
+				B4C7CDB32374151A00FF6A2D /* CYFMPlayFooterView.swift in Sources */,
 				B40B4AC723580BB800171ECF /* CYFMHomeRecommendLiveCell.swift in Sources */,
 				B40E8BEB2355ADF40026F1FF /* WRCustomNavigationBar.swift in Sources */,
 				B40B4AC523580BA000171ECF /* CYOneKeyListenCell.swift in Sources */,

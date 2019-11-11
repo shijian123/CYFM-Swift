@@ -13,4 +13,8 @@ class CYFMClassifySubFooterView: UICollectionReusableView {
         super.init(frame: frame)
         backgroundColor = CYFMDownColor
     }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
