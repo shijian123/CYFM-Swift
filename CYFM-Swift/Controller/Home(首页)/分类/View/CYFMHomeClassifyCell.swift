@@ -33,8 +33,8 @@ class CYFMHomeClassifyCell: UICollectionViewCell {
 
         addSubview(self.imgView)
         self.imgView.snp.makeConstraints { (make) in
-            make.left.equalTo(10)
-            make.width.height.equalTo(25)
+            make.left.equalTo(5)
+            make.width.height.equalTo(20)
             make.centerY.equalToSuperview()
         }
         

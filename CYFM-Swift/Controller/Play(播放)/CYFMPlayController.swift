@@ -95,14 +95,17 @@ class CYFMPlayController: CYBaseController {
         
     }
     
+    // 返回
     @objc func leftBarBtnClickMethod() {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
+    // 更多
     @objc func rightBarBtnClick1Method() {
         
     }
     
+    // 分享
     @objc func rightBarBtnClick2Method() {
         
     }

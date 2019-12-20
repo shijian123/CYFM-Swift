@@ -47,18 +47,6 @@ extension CYFMHomeClassifyViewModel {
         return self.classifyModel?[section].itemList?.count ?? 0
     }
     
-    func insetForSectionAt(section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 2.5, bottom: 0, right: 2.5)
-    }
-    
-    func minimumInteritemSpacingForSectionAt(section:Int) ->CGFloat {
-        return 0
-    }
-    
-    func minimumLineSpacingForSectionAt(section:Int) ->CGFloat {
-        return 2
-    }
-    
     func sizeForItemAt(indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 || indexPath.section == 1 || indexPath.section == 2 {
             return CGSize(width: (CYFMScreenWidth - 10) / 4, height: 40)

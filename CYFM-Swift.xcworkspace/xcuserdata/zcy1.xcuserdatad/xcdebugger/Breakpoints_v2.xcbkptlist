@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C71A7EA5-494F-4533-83E6-D116C810EC2D"
+            uuid = "70C3BBCE-D707-4737-9BD7-7045C9F8C966"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CYFM-Swift/Controller/Home(&#x9996;&#x9875;)/&#x63a8;&#x8350;/View/CYFMHeaderViewCell/CYFMRecommendHeaderCell.swift"
+            filePath = "CYFM-Swift/Controller/Play(&#x64ad;&#x653e;)/View/CYFMPlayCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "pagerView(_:didSelectItemAt:)"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "playTrckInfo"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E8969AC-FA99-4476-832C-3CDCADE2199A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CYFM-Swift/Controller/Home(&#x9996;&#x9875;)/&#x5206;&#x7c7b;/&#x4e8c;&#x7ea7;&#x5206;&#x7c7b;/Controller/CYFMClassifySubContentController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

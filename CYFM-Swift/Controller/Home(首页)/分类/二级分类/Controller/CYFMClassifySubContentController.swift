@@ -53,7 +53,7 @@ class CYFMClassifySubContentController: CYBaseController {
             make.top.right.bottom.left.equalToSuperview()
         }
         self.myCollectionV.cyHead.beginRefreshing()
-//        setupLoadData()
+        setupLoadData()
     }
     
     func setupLoadData() {
@@ -97,6 +97,8 @@ extension CYFMClassifySubContentController: UICollectionViewDelegate, UICollecti
         let albumId = self.classifyVerticallist?[indexPath.row].albumId ?? 0
         let vc = CYFMPlayController(albumId: albumId)
         navigationController?.pushViewController(vc, animated: true)
+//        vc.modalPresentationStyle = .overFullScreen
+//        present(vc, animated: true, completion: nil)
     }
     
 }

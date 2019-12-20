@@ -97,9 +97,13 @@ class CYFMHomeRecommendController: CYBaseController {
     }
     
     func setupLoadRecommendADData() {
+        
         CYFMRecommendProvider.request(.recommendAdList) { (result) in
-            #warning("打印网络请求")
+            
             if case let .success(response) = result {
+                let request = response.request
+                print("网络请求：", request?.url as Any)
+                
                 let data = try? response.mapJSON()
                 let json = JSON(data!)
                 if let advertList = JSONDeserializer<CYFMRecommnedAdvertModel>.deserializeModelArrayFrom(json: json["data"].description) {// 从字符串转换为对象实例

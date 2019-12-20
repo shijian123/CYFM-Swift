@@ -42,9 +42,7 @@ class CYFMHomeClassifyController: CYBaseController {
         self.myCollectionV.snp.makeConstraints { (make) in
             make.left.right.top.height.equalToSuperview()
         }
-        
         setupLoadData()
-        
     }
     
     func setupLoadData() {
@@ -52,7 +50,6 @@ class CYFMHomeClassifyController: CYBaseController {
             self?.myCollectionV.reloadData()
         }
         viewModel.refreshDataSource()
-        
     }
 
     /*

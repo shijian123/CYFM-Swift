@@ -66,6 +66,7 @@ class CYFMRecommendHeaderCell: UICollectionViewCell {
             make.height.equalTo(150)
         }
         
+//        #warning("数据暂无九宫格数据")
         // 九宫格
         addSubview(gridView)
         gridView.snp.makeConstraints { (make) in
@@ -140,11 +141,11 @@ extension CYFMRecommendHeaderCell: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
             let cell: CYFMRecommendGridCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CYFMRecommendGridCell", for: indexPath) as! CYFMRecommendGridCell
-            
+            cell.square = self.square![indexPath.row];
             return cell
         }else {
             let cell: CYFMRecommendNewsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CYFMRecommendNewsCell", for: indexPath) as! CYFMRecommendNewsCell
-            
+            cell.topBuzzList = self.topBuzzList
             return cell
         }
     }

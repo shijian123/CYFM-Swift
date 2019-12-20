@@ -11,12 +11,14 @@ import SwiftyJSON
 import HandyJSON
 
 class CYFMHomeRecommendLiveCell: UICollectionViewCell {
+    
+    private var pageNum: Int = 0
     private var live: [CYFMLiveModel]?
     private let CYRecommendLiveCellID = "CYRecommendLiveCell"
     
     private lazy var changeBtn: UIButton = {
         let btn = UIButton()
-        btn.setTitle("", for: .normal)
+        btn.setTitle("换一换", for: .normal)
         btn.setTitleColor(CYFMButtonColor, for: .normal)
         btn.backgroundColor = CYFMButtonBackgroundColor
         btn.layer.cornerRadius = 5.0
@@ -77,8 +79,12 @@ class CYFMHomeRecommendLiveCell: UICollectionViewCell {
     
     // 更换一批按钮刷新cell
     @objc func updateBtnClick(sender: UIButton) {
-        CYFMRecommendProvider.request(.changeLiveList) { (result) in
+        pageNum += 1
+        
+        CYFMRecommendProvider.request(.changeLiveList(pageNum: pageNum)) { (result) in
             if case let .success(response) = result {
+                let request = response.request
+                print("网络请求：", request?.url as Any)
                 // 解析数据
                 let data = try? response.mapJSON()
                 let json = JSON(data!)
@@ -99,7 +105,7 @@ extension CYFMHomeRecommendLiveCell: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CYRecommendLiveCell = collectionView.dequeueReusableCell(withReuseIdentifier: CYRecommendLiveCellID, for: indexPath) as! CYRecommendLiveCell
-        
+        cell.recommendLiveData = self.live?[indexPath.row]
         return cell
     }
     

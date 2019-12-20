@@ -27,7 +27,7 @@ enum CYFMRecommendAPI {
     // 更换精品
     case changePaidCategoryList
     // 更换直播
-    case changeLiveList
+    case changeLiveList(pageNum: Int)
     // 更换其他
     case changeOtherCategory(categoryId:Int)
 }
@@ -174,10 +174,9 @@ extension CYFMRecommendAPI: TargetType {
                 "deviceId": UIDevice.current.identifierForVendor!.uuidString]
             
             
-        case .changeLiveList:
-            parmeters = [
-                "currentRecordIds":"1655918%2C1671613%2C1673030%2C1670774%2C1673082%2C1672407",
-                "pageId":1,
+        case .changeLiveList(let pageNum):
+            parmeters = ["currentRecordIds":"1655918%2C1671613%2C1673030%2C1670774%2C1673082%2C1672407",
+                "pageId": pageNum,
                 "pageSize":6,
                 "device":"iPhone"
             ]

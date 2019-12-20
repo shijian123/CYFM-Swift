@@ -11,20 +11,20 @@ import UIKit
 class CYRecommendLiveCell: UICollectionViewCell {
     private var imgView: UIImageView = {
         let imageV = UIImageView()
-        imageV.layer.cornerRadius = 8
+        imageV.layer.cornerRadius = 5
         imageV.layer.masksToBounds = true
         return imageV
     }()
     
     private var titleLab: UILabel = {
         let lab = UILabel()
-        lab.font = UIFont.systemFont(ofSize: 16)
+        lab.font = UIFont.systemFont(ofSize: 14)
         return lab
     }()
     
     private var subLab: UILabel = {
         let lab = UILabel()
-        lab.font = UIFont.systemFont(ofSize: 14)
+        lab.font = UIFont.systemFont(ofSize: 13)
         lab.textColor = .gray
         return lab
     }()
@@ -33,6 +33,7 @@ class CYRecommendLiveCell: UICollectionViewCell {
         let lab = UILabel()
         lab.font = UIFont.systemFont(ofSize: 12)
         lab.textColor = .white
+        lab.textAlignment = .center
         lab.backgroundColor = .orange
         lab.layer.masksToBounds = true
         lab.layer.cornerRadius = 4
@@ -56,7 +57,7 @@ class CYRecommendLiveCell: UICollectionViewCell {
     func setUpLayout() {
         addSubview(self.imgView)
         self.imgView.snp.makeConstraints { (make) in
-            make.left.top.equalToSuperview()
+            make.left.top.right.equalToSuperview()
             make.bottom.equalToSuperview().offset(-60)
         }
         
@@ -64,15 +65,15 @@ class CYRecommendLiveCell: UICollectionViewCell {
         self.categoryLab.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-5)
             make.bottom.equalToSuperview().offset(-5)
-            make.width.equalTo(30)
+            make.width.equalTo(40)
             make.height.equalTo(20)
         }
         
         addSubview(self.titleLab)
         self.titleLab.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
-            make.top.equalTo(self.imgView.snp.bottom)
-            make.height.equalTo(20)
+            make.top.equalTo(self.imgView.snp.bottom).offset(5)
+            make.height.equalTo(15)
         }
         
         addSubview(self.subLab)

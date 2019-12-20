@@ -35,6 +35,10 @@ extension CYFMRecommendViewModel {
         // 首页推荐接口请求
         CYFMRecommendProvider.request(.recommendList) { (result) in
             if case let .success(response) = result {
+                
+                let request = response.request
+                print("网络请求：", request?.url as Any)
+                
                 // 解析数据
                 let data = try? response.mapJSON()
                 let json = JSON(data!)
@@ -46,16 +50,20 @@ extension CYFMRecommendViewModel {
                         self.recommendList = recommendList as? [CYFMRecommendListModel]
                     }
                     
-                    if let focus = JSONDeserializer<CYFMFocusModel>.deserializeFrom(json: json["list"][0]["list"][0].description) {
+                    if let focus = JSONDeserializer<CYFMFocusModel>.deserializeFrom(json: json["list"][0]["list"][0].description) {// 获取顶部banner
                         self.focus = focus
                     }
                     
-                    if let square = JSONDeserializer<CYFMSquareModel>.deserializeModelArrayFrom(json: json["list"][1]["list"].description) {
+                    if let square = JSONDeserializer<CYFMSquareModel>.deserializeModelArrayFrom(json: json["list"][1]["list"].description) {// square
                         self.squareList = square as? [CYFMSquareModel]
                     }
                     
-                    if let topBuzz = JSONDeserializer<CYFMTopBuzzModel>.deserializeModelArrayFrom(json: json["list"][2]["list"].description) {
+                    if let topBuzz = JSONDeserializer<CYFMTopBuzzModel>.deserializeModelArrayFrom(json: json["list"][2]["list"].description) {// 听头条
                         self.topBuzzList = topBuzz as? [CYFMTopBuzzModel]
+                    }
+                    
+                    if let guessYouLike = JSONDeserializer<CYFMGuessYouLikeModel>.deserializeModelArrayFrom(json: json["list"][3]["list"].description) {// 猜你喜欢
+                        self.guessYouLikeList = guessYouLike as? [CYFMGuessYouLikeModel]
                     }
                     
                     if let oneKeyListen = JSONDeserializer<CYFMOneKeyListenModel>.deserializeModelArrayFrom(json: json["list"][9]["list"].description) {
@@ -96,20 +104,25 @@ extension CYFMRecommendViewModel {
     // item 尺寸
     func sizeForItemAt(indexPath: IndexPath) -> CGSize {
         let HeaderAndFooterHeight: Int = 90
-        let itemNums = (self.homeRecommendList?[indexPath.section].list?.count)!/3
+        
+        let itemNums = Int(ceil((Double)(self.homeRecommendList?[indexPath.section].list?.count ?? 0)/3))
+        
         let count = self.homeRecommendList?[indexPath.section].list?.count
         let moduleType = self.homeRecommendList?[indexPath.section].moduleType
         
         if moduleType == "focus" {
+//            #warning("数据暂无九宫格数据")
             return CGSize(width: CYFMScreenWidth, height: 360)
         }else if moduleType == "square" || moduleType == "topBuzz" {
             return CGSize.zero
         }else if moduleType == "guessYouLike" || moduleType == "paidCategory" || moduleType == "categoriesForLong" || moduleType == "cityCategory" || moduleType == "live" {
-            return CGSize(width: CYFMScreenWidth, height: CGFloat(HeaderAndFooterHeight+180*itemNums))
+            return CGSize(width: CYFMScreenWidth, height: CGFloat(HeaderAndFooterHeight + 180*itemNums))
         }else if moduleType == "categoriesForShort" || moduleType == "playlist" || moduleType == "categoriesForExplore" {
             return CGSize(width: CYFMScreenWidth, height: CGFloat(HeaderAndFooterHeight+120*count!))
         }else if moduleType == "ad" {
-            return CGSize(width: CYFMScreenWidth, height: 240)
+//            return CGSize(width: CYFMScreenWidth, height: 240)
+            return .zero
+
         }else if moduleType == "oneKeyListen" {
             return CGSize(width: CYFMScreenWidth, height: 180)
         }else {
@@ -119,7 +132,7 @@ extension CYFMRecommendViewModel {
     // 分区头视图size
     func referenceSizeForHeaderInSection(section: Int) -> CGSize {
         let moduleType = self.homeRecommendList?[section].moduleType
-        if moduleType == "focus" || moduleType == "square" || moduleType == "topBuzz" || moduleType == "ad" || section == 18 {
+        if moduleType == "focus" || moduleType == "square" || moduleType == "topBuzz" || moduleType == "ad" || section == 18 || moduleType == "microLesson" {
             return CGSize.zero
         }else {
             return CGSize(width: CYFMScreenWidth, height: 40)

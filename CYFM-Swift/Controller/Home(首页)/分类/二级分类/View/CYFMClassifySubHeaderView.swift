@@ -18,7 +18,7 @@ class CYFMClassifySubHeaderView: UICollectionReusableView {
     
     private var moreBtn: UIButton = {
         let btn = UIButton(type: .custom)
-        btn.setTitle("更多 >", for: .normal)
+        btn.setTitle("更多 ⟩", for: .normal)
         btn.setTitleColor(.gray, for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         return btn

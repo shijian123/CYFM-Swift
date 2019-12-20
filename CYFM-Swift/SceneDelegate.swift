@@ -41,8 +41,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 return false
             }
         }
-        tabBarCont.didHijackHandler = {
-            [weak tabBarCont] tabbarController, viewController, index in
+        tabBarCont.didHijackHandler = { //  选中凸出item的响应事件
+//            [weak tabBarCont] tabbarController, viewController, index in
+                tabbarController, viewController, index in
             
             DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
                 let warning = MessageView.viewFromNib(layout: .cardView)

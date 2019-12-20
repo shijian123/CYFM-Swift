@@ -29,7 +29,7 @@ class CYFMHotAudiobookCell: UICollectionViewCell {
     }()
     
     private lazy var myCollectionV: UICollectionView = {
-        let layout = UICollectionViewLayout()
+        let layout = UICollectionViewFlowLayout()
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionV.delegate = self
         collectionV.dataSource = self
@@ -82,6 +82,7 @@ extension CYFMHotAudiobookCell: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CYHotAudiobookCell = collectionView.dequeueReusableCell(withReuseIdentifier: CYHotAudiobookCellID, for: indexPath) as! CYHotAudiobookCell
+        cell.recommendData = self.recommendList?[indexPath.row]
         return cell
     }
     

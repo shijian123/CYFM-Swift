@@ -45,8 +45,7 @@ class CYReplicatorLayer: UIView {
         
         //设置子层相对于前一个层的延迟时间
         replicatorLayer.instanceDelay = 0.2
-        
-        //设置层的颜色，(前提是要设置层的背景颜色，如果没有设置背景颜色，默认是透明的，再设置这个属性不会有效果。
+        //设置层的颜色 (前提是要设置层的背景颜色，如果没有设置背景颜色，默认是透明的，再设置这个属性不会有效果。
         replicatorLayer.instanceColor = CYFMButtonColor.cgColor
         
         //需要把子层加入到复制层中，复制层按照前面设置的参数自动复制
