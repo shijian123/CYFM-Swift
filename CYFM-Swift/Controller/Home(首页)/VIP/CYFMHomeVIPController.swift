@@ -180,19 +180,19 @@ extension CYFMHomeVIPController: CYFMHomeVipCategoriesCellDelegate {
             vc.title = title
             navigationController?.pushViewController(vc, animated: true)
         }else {
-            let vc = CYFMweb
+//            let vc = CYFMweb
         }
     }
 }
 
 extension CYFMHomeVIPController: CYFMHomeVipHotCellDelegate {
     func homeVipHotCellItemClick(model: CYFMCategoryContents) {
-        <#code#>
+        
     }
 }
 
 extension CYFMHomeVIPController: CYFMHomeVipEnjoyCellDelegate {
     func homeVipEnjoyCellItemClick(model: CYFMCategoryContents) {
-        <#code#>
+        
     }
 }
