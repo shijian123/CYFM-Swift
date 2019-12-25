@@ -22,7 +22,7 @@ extension CYFMPlayAPI: TargetType {
     
     var path: String {
         switch self {
-        case .fmPlayData(let albumId, let trackUid, let uid):
+        case .fmPlayData( _, let trackUid, _):
             return "/mobile/track/v2/playpage/\(trackUid)"
         }
     }
@@ -49,7 +49,7 @@ extension CYFMPlayAPI: TargetType {
         "deviceId": UIDevice.current.identifierForVendor!.uuidString] as [String : Any]
         
         switch self {
-        case .fmPlayData(albumId: let albumId, trackUid: let trackUid, uid: let uid):
+        case .fmPlayData(albumId: let albumId, trackUid: _, uid: let uid):
             param["albumId"] = albumId
 //            param["trackUid"] = trackUid
             param["trackUid"] = uid

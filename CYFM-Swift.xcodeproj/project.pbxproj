@@ -54,6 +54,7 @@
 		B40E8CCA2356B0B40026F1FF /* CYFMHomeClassifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E8CC92356B0B40026F1FF /* CYFMHomeClassifyController.swift */; };
 		B40E8CD62356B12E0026F1FF /* CYFMHomeBroadcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E8CD52356B12E0026F1FF /* CYFMHomeBroadcastController.swift */; };
 		B421B2582356FECF00912BB3 /* CYFMRecommendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421B2572356FECF00912BB3 /* CYFMRecommendAPI.swift */; };
+		B44AF4DA23B38141009581FA /* CYFMWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AF4D923B38141009581FA /* CYFMWebViewController.swift */; };
 		B462E9EE2366E6380031EAEA /* CYFMHomeClassifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9ED2366E6380031EAEA /* CYFMHomeClassifyAPI.swift */; };
 		B462E9F02366EB6B0031EAEA /* CYFMHomeClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9EF2366EB6B0031EAEA /* CYFMHomeClassifyModel.swift */; };
 		B462E9F42366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9F32366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift */; };
@@ -191,6 +192,7 @@
 		B40E8CC92356B0B40026F1FF /* CYFMHomeClassifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyController.swift; sourceTree = "<group>"; };
 		B40E8CD52356B12E0026F1FF /* CYFMHomeBroadcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeBroadcastController.swift; sourceTree = "<group>"; };
 		B421B2572356FECF00912BB3 /* CYFMRecommendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRecommendAPI.swift; sourceTree = "<group>"; };
+		B44AF4D923B38141009581FA /* CYFMWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMWebViewController.swift; sourceTree = "<group>"; };
 		B462E9ED2366E6380031EAEA /* CYFMHomeClassifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyAPI.swift; sourceTree = "<group>"; };
 		B462E9EF2366EB6B0031EAEA /* CYFMHomeClassifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyModel.swift; sourceTree = "<group>"; };
 		B462E9F32366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyHeaderView.swift; sourceTree = "<group>"; };
@@ -1216,6 +1218,7 @@
 				B40E8BB82355A3520026F1FF /* CYFMBouncesContentView.swift */,
 				B40E8BBA2355A3850026F1FF /* CYFMIrregularityBasicContentView.swift */,
 				B40E8BBC2355ABCE0026F1FF /* CYBaseController.swift */,
+				B44AF4D923B38141009581FA /* CYFMWebViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1483,6 +1486,7 @@
 				B40E8CCA2356B0B40026F1FF /* CYFMHomeClassifyController.swift in Sources */,
 				B421B2582356FECF00912BB3 /* CYFMRecommendAPI.swift in Sources */,
 				B40E8BBF2355ABEC0026F1FF /* CYFMFindController.swift in Sources */,
+				B44AF4DA23B38141009581FA /* CYFMWebViewController.swift in Sources */,
 				B4846FB923ACB6D400AE1BF1 /* CYFMHomeLiveAPIProvider.swift in Sources */,
 				B40B4AA923571BA600171ECF /* CYFMHotAudiobookCell.swift in Sources */,
 				B462E9F02366EB6B0031EAEA /* CYFMHomeClassifyModel.swift in Sources */,

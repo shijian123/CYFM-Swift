@@ -10,6 +10,13 @@ import UIKit
 
 class CYFMPlayDetailController: CYBaseController {
 
+    private var albumId: Int = 0
+    
+    convenience init(albumId: Int = 0) {
+        self.init()
+        self.albumId = albumId
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

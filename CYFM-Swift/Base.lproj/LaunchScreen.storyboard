@@ -20,6 +20,13 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7lB-1l-Bun" secondAttribute="height" multiplier="375:667" id="2vf-HO-wMF"/>
                                 </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="medium">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                </preferredSymbolConfiguration>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="capslock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RSu-G1-VhL">
+                                <rect key="frame" x="197" y="114.5" width="21" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,5 +44,6 @@
     </scenes>
     <resources>
         <image name="LaunchImage-750" width="375" height="667"/>
+        <image name="capslock" catalog="system" width="64" height="60"/>
     </resources>
 </document>
