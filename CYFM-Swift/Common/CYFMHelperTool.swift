@@ -70,13 +70,13 @@ class CYFMHelperTool: NSObject {
 
 // 弹窗类型
 extension CYFMHelperTool {
-    /// 暂无此功能Base弹窗
+    /// 暂无此功能弹窗
     class func showNoFunctionWarning() {
-        showNoFunctionWarning(text: "暂时没有点击功能")
+        showCustomTextWarning(text: "暂时没有点击功能")
     }
     
-    /// 暂无此功能弹窗
-    class func showNoFunctionWarning(text: String)  {
+    /// 自定义Text警告弹窗
+    class func showCustomTextWarning(text: String)  {
         let warningView = MessageView.viewFromNib(layout: .cardView)
         warningView.configureTheme(.warning)
         warningView.configureDropShadow()

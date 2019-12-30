@@ -31,7 +31,7 @@ class CYFMHomeLiveRankCell: UICollectionViewCell {
         return collectionV
     }()
     
-    var time: 
+    var myTimer: Timer?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,6 +40,7 @@ class CYFMHomeLiveRankCell: UICollectionViewCell {
             make.width.height.equalToSuperview()
             make.center.equalToSuperview()
         }
+        starTimer()
     }
     
     required init?(coder: NSCoder) {
@@ -49,22 +50,51 @@ class CYFMHomeLiveRankCell: UICollectionViewCell {
     var multidimensionalRankVos: [CYFMMultidimensionalRankVosModel]? {
         didSet {
             guard let model = multidimensionalRankVos else {
-                self.multidimensionalRankVosList = model
-                self.collectionView.reloadData()
+                return
             }
+            self.multidimensionalRankVosList = model
+            self.collectionView.reloadData()
         }
     }
-    
 }
 
 extension CYFMHomeLiveRankCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return (self.multidimensionalRankVosList?.count ?? 0)*100
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell: CYFMLiveRankCell = collectionView.dequeueReusableCell(withReuseIdentifier: CYFMLiveRankCellID, for: indexPath) as! CYFMLiveRankCell
+        cell.backgroundColor = UIColor(red: 248/255.0, green: 245/255.0, blue: 246/255/0, alpha: 1.0)
+        cell.multidimensionalRankVos = self.multidimensionalRankVosList?[indexPath.row%(self.multidimensionalRankVosList?.count)!]
+        return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        CYFMHelperTool.showNoFunctionWarning()
+    }
     
+    func starTimer() {
+        let timer = Timer(timeInterval: 3.0, target: self, selector: #selector(nextPage), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: .common)
+        self.myTimer = timer
+    }
+    
+    /// 在3秒后，自动跳转到下一页
+    @objc func nextPage() {
+        let currentOffsetX = collectionView.contentOffset.x
+        let offsetX = currentOffsetX + collectionView.bounds.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+    }
+    
+    /// 当collectionView开始拖动的时候,取消定时器
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.myTimer?.invalidate()
+        self.myTimer = nil
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        starTimer()
+    }
+
 }

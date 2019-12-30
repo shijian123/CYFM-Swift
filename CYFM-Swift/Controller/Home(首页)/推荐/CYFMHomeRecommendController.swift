@@ -82,7 +82,7 @@ class CYFMHomeRecommendController: CYBaseController {
             make.center.equalToSuperview()
         }
         myCollectionView.cyHead.beginRefreshing()
-        setupLoadData()
+//        setupLoadData()
         setupLoadRecommendADData()
     }
     
@@ -249,11 +249,11 @@ extension CYFMHomeRecommendController: UICollectionViewDelegateFlowLayout, UICol
 extension CYFMHomeRecommendController: CYFMRecommendHeaderCellDelegate {
     
     func recommendHeaderBannerClick(url: String) {
-        CYFMHelperTool.showNoFunctionWarning(text: "点击的url："+url)
+        CYFMHelperTool.showCustomTextWarning(text: "点击的url：" + url)
     }
     
     func recommendHeaderBtnClick(categoryId: String, title: String, url: String) {
-        CYFMHelperTool.showNoFunctionWarning(text: "九宫格点击的title："+title+"\nurl："+url)
+        CYFMHelperTool.showCustomTextWarning(text: "九宫格点击的title：" + title + "\nurl：" + url)
     }
     
 }
@@ -271,7 +271,7 @@ extension CYFMHomeRecommendController: CYFMRecommendGuessLikeCellDelegate {
 //MARK: - 点击热门有声书等cell代理方法
 extension CYFMHomeRecommendController: CYFMHotAudiobookCellDelegate {
     func hotAudiobookCellItemClick(model: CYFMRecommendListModel) {
-        CYFMHelperTool.showNoFunctionWarning(text: "点击热门有声书")
+        CYFMHelperTool.showCustomTextWarning(text: "点击热门有声书")
     }
 }
 
