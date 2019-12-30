@@ -27,6 +27,7 @@ class CYFMHomeVIPCell: UITableViewCell {
         let lab = UILabel()
         lab.text = "刷卡机打发地方"
         lab.textColor = .gray
+        lab.numberOfLines = 0
         lab.font = .systemFont(ofSize: 15)
         return lab
     }()
@@ -85,7 +86,7 @@ class CYFMHomeVIPCell: UITableViewCell {
         
         addSubview(self.subLab)
         self.subLab.snp.makeConstraints { (make) in
-            make.left.right.height.equalTo(self.titleLab)
+            make.left.right.equalTo(self.titleLab)
             make.top.equalTo(self.titleLab.snp.bottom).offset(10)
         }
         
@@ -99,7 +100,15 @@ class CYFMHomeVIPCell: UITableViewCell {
         addSubview(self.numLab)
         self.numLab.snp.makeConstraints { (make) in
             make.left.equalTo(self.numImgV.snp.right).offset(5)
-            make.bottom.equalTo(60)
+            make.bottom.equalTo(self.numImgV)
+            make.width.equalTo(70)
+        }
+        
+        addSubview(self.tracksImgV)
+        self.tracksImgV.snp.makeConstraints { (make) in
+            make.left.equalTo(self.numLab.snp.right).offset(5)
+            make.bottom.equalTo(self.numLab)
+            make.width.height.equalTo(20)
         }
         
         addSubview(self.tracksLab)
@@ -131,10 +140,6 @@ class CYFMHomeVIPCell: UITableViewCell {
             self.numLab.text = tagString
         }
     }
-    
-    
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

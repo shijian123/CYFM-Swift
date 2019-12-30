@@ -31,7 +31,6 @@ class CYFMHomeVIPController: CYBaseController {
     private let CYFMHomeVipHotCellID        = "CYFMHomeVipHotCell"
     private let CYFMHomeVipEnjoyCellID      = "CYFMHomeVipEnjoyCell"
 
-    
     private lazy var headerView: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: CYFMScreenWidth, height: 30))
         view.backgroundColor = .purple
@@ -45,8 +44,8 @@ class CYFMHomeVIPController: CYBaseController {
         tableV.backgroundColor = .white
         tableV.separatorStyle = .none
         // 注册头尾视图
-        tableV.register(CYFMHomeVipHeaderView.self, forCellReuseIdentifier: CYFMHomeVipHeaderViewID)
-        tableV.register(CYFMHomeVipFooterView.self, forCellReuseIdentifier: CYFMHomeVipFooterViewID)
+        tableV.register(CYFMHomeVipHeaderView.self, forHeaderFooterViewReuseIdentifier: CYFMHomeVipHeaderViewID)
+        tableV.register(CYFMHomeVipFooterView.self, forHeaderFooterViewReuseIdentifier: CYFMHomeVipFooterViewID)
         
         // 注册分区Cell
         tableV.register(CYFMHomeVIPCell.self, forCellReuseIdentifier: CYFMHomeVIPCellID)
@@ -66,10 +65,10 @@ class CYFMHomeVIPController: CYBaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.addSubview(self.tableView)
+        self.tableView.cyHead.beginRefreshing()
+        setupLoadData()
     }
-    
     
     func setupLoadData() {
         viewModel.updateBlock = {[weak self] in
@@ -78,7 +77,6 @@ class CYFMHomeVIPController: CYBaseController {
         }
         // 发起网络请求
         self.viewModel.refreshDataSource()
-        
     }
 
     /*
