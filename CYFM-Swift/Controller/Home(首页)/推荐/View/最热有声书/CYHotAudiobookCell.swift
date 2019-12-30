@@ -28,7 +28,7 @@ class CYHotAudiobookCell: UICollectionViewCell {
         let lab = UILabel()
         lab.font = UIFont.systemFont(ofSize: 13)
         lab.textColor = .white
-        lab.backgroundColor = UIColor(red: 248, green: 210, blue: 74, alpha: 1)
+        lab.backgroundColor = UIColor(red: 248/255.0, green: 210/255.0, blue: 74/255.0, alpha: 1.0)
         lab.textAlignment = .center
         lab.layer.masksToBounds = true
         lab.layer.cornerRadius = 3.0

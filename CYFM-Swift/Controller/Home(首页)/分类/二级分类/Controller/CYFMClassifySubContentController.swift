@@ -53,7 +53,7 @@ class CYFMClassifySubContentController: CYBaseController {
             make.top.right.bottom.left.equalToSuperview()
         }
         self.myCollectionV.cyHead.beginRefreshing()
-        setupLoadData()
+//        setupLoadData()
     }
     
     func setupLoadData() {

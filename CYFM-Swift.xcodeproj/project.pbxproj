@@ -55,6 +55,7 @@
 		B40E8CD62356B12E0026F1FF /* CYFMHomeBroadcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E8CD52356B12E0026F1FF /* CYFMHomeBroadcastController.swift */; };
 		B421B2582356FECF00912BB3 /* CYFMRecommendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421B2572356FECF00912BB3 /* CYFMRecommendAPI.swift */; };
 		B44AF4DA23B38141009581FA /* CYFMWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AF4D923B38141009581FA /* CYFMWebViewController.swift */; };
+		B44AF54823B4921E009581FA /* CYFMHomeLiveBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AF54723B4921E009581FA /* CYFMHomeLiveBannerCell.swift */; };
 		B462E9EE2366E6380031EAEA /* CYFMHomeClassifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9ED2366E6380031EAEA /* CYFMHomeClassifyAPI.swift */; };
 		B462E9F02366EB6B0031EAEA /* CYFMHomeClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9EF2366EB6B0031EAEA /* CYFMHomeClassifyModel.swift */; };
 		B462E9F42366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9F32366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift */; };
@@ -75,7 +76,6 @@
 		B4846FAF23ACB6D400AE1BF1 /* CYFMHomeLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4846F8723ACB6D300AE1BF1 /* CYFMHomeLiveController.swift */; };
 		B4846FB023ACB6D400AE1BF1 /* CYFMLiveCategoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4846F8923ACB6D300AE1BF1 /* CYFMLiveCategoryListController.swift */; };
 		B4846FB123ACB6D400AE1BF1 /* CYFMHomeLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4846F8B23ACB6D300AE1BF1 /* CYFMHomeLiveModel.swift */; };
-		B4846FB223ACB6D400AE1BF1 /* LBFMHomeLiveBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4846F8E23ACB6D300AE1BF1 /* LBFMHomeLiveBannerCell.swift */; };
 		B4846FB323ACB6D400AE1BF1 /* CYFMHomeLiveGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4846F9023ACB6D300AE1BF1 /* CYFMHomeLiveGridCell.swift */; };
 		B4846FB423ACB6D400AE1BF1 /* CYFMLiveHeaderGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4846F9123ACB6D300AE1BF1 /* CYFMLiveHeaderGridCell.swift */; };
 		B4846FB523ACB6D400AE1BF1 /* CYFMLiveRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4846F9323ACB6D300AE1BF1 /* CYFMLiveRankCell.swift */; };
@@ -193,6 +193,7 @@
 		B40E8CD52356B12E0026F1FF /* CYFMHomeBroadcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeBroadcastController.swift; sourceTree = "<group>"; };
 		B421B2572356FECF00912BB3 /* CYFMRecommendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRecommendAPI.swift; sourceTree = "<group>"; };
 		B44AF4D923B38141009581FA /* CYFMWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMWebViewController.swift; sourceTree = "<group>"; };
+		B44AF54723B4921E009581FA /* CYFMHomeLiveBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeLiveBannerCell.swift; sourceTree = "<group>"; };
 		B462E9ED2366E6380031EAEA /* CYFMHomeClassifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyAPI.swift; sourceTree = "<group>"; };
 		B462E9EF2366EB6B0031EAEA /* CYFMHomeClassifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyModel.swift; sourceTree = "<group>"; };
 		B462E9F32366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyHeaderView.swift; sourceTree = "<group>"; };
@@ -213,7 +214,6 @@
 		B4846F8723ACB6D300AE1BF1 /* CYFMHomeLiveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYFMHomeLiveController.swift; sourceTree = "<group>"; };
 		B4846F8923ACB6D300AE1BF1 /* CYFMLiveCategoryListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYFMLiveCategoryListController.swift; sourceTree = "<group>"; };
 		B4846F8B23ACB6D300AE1BF1 /* CYFMHomeLiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYFMHomeLiveModel.swift; sourceTree = "<group>"; };
-		B4846F8E23ACB6D300AE1BF1 /* LBFMHomeLiveBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBFMHomeLiveBannerCell.swift; sourceTree = "<group>"; };
 		B4846F9023ACB6D300AE1BF1 /* CYFMHomeLiveGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYFMHomeLiveGridCell.swift; sourceTree = "<group>"; };
 		B4846F9123ACB6D300AE1BF1 /* CYFMLiveHeaderGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYFMLiveHeaderGridCell.swift; sourceTree = "<group>"; };
 		B4846F9323ACB6D300AE1BF1 /* CYFMLiveRankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYFMLiveRankCell.swift; sourceTree = "<group>"; };
@@ -912,7 +912,7 @@
 		B4846F8D23ACB6D300AE1BF1 /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
-				B4846F8E23ACB6D300AE1BF1 /* LBFMHomeLiveBannerCell.swift */,
+				B44AF54723B4921E009581FA /* CYFMHomeLiveBannerCell.swift */,
 			);
 			path = "轮播图";
 			sourceTree = "<group>";
@@ -1423,6 +1423,7 @@
 				B462EA08236823510031EAEA /* CYFMClassifySubCategoryCell.swift in Sources */,
 				B49AABA92351BF78007FD8DC /* CYFMConst.swift in Sources */,
 				B40B4AC323580B8D00171ECF /* CYFMOneKeyListenCell.swift in Sources */,
+				B44AF54823B4921E009581FA /* CYFMHomeLiveBannerCell.swift in Sources */,
 				B4846FD523ACB86D00AE1BF1 /* CYFMHomeVipHeaderView.swift in Sources */,
 				B4846FB123ACB6D400AE1BF1 /* CYFMHomeLiveModel.swift in Sources */,
 				B4CA7994236AC4F1006DFEAC /* CYFMClassifySubModuleType17Cell.swift in Sources */,
@@ -1458,7 +1459,6 @@
 				B49AAB4C2351B286007FD8DC /* AppDelegate.swift in Sources */,
 				B4846FC723ACB73000AE1BF1 /* CYFMHomeVipAPIProvider.swift in Sources */,
 				B40E8BBD2355ABCE0026F1FF /* CYBaseController.swift in Sources */,
-				B4846FB223ACB6D400AE1BF1 /* LBFMHomeLiveBannerCell.swift in Sources */,
 				B40B4AC123580B7800171ECF /* CYFMAdvertCell.swift in Sources */,
 				B462EA02236823030031EAEA /* CYFMClassifySubMenuAPI.swift in Sources */,
 				B40E8C902355CD130026F1FF /* Array+CY.swift in Sources */,

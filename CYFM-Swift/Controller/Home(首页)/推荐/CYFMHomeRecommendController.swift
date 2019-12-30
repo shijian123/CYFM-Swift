@@ -82,7 +82,7 @@ class CYFMHomeRecommendController: CYBaseController {
             make.center.equalToSuperview()
         }
         myCollectionView.cyHead.beginRefreshing()
-        setupLoadData()
+//        setupLoadData()
         setupLoadRecommendADData()
     }
     
@@ -240,6 +240,7 @@ extension CYFMHomeRecommendController: UICollectionViewDelegateFlowLayout, UICol
 //        if moduleType == "focus" || moduleType == "square" || moduleType == "topBuzz" {
 //
 //        }
+        
     }
     
 }
@@ -248,21 +249,11 @@ extension CYFMHomeRecommendController: UICollectionViewDelegateFlowLayout, UICol
 extension CYFMHomeRecommendController: CYFMRecommendHeaderCellDelegate {
     
     func recommendHeaderBannerClick(url: String) {
-        print("点击的url："+url)
-        
-        let status = MessageView.viewFromNib(layout: .statusLine)
-        status.backgroundColor = CYFMButtonColor
-        status.bodyLabel?.textColor = .white
-        status.configureContent(body: "暂无点击功能")
-        var statusConfig = SwiftMessages.defaultConfig
-        statusConfig.presentationContext = .window(windowLevel: .normal)
-        statusConfig.preferredStatusBarStyle = .lightContent
-        SwiftMessages.show(config: statusConfig, view: status)
-        
+        CYFMHelperTool.showCustomTextWarning(text: "点击的url：" + url)
     }
     
     func recommendHeaderBtnClick(categoryId: String, title: String, url: String) {
-        print("九宫格点击的title："+title+"\nurl："+url)
+        CYFMHelperTool.showCustomTextWarning(text: "九宫格点击的title：" + title + "\nurl：" + url)
     }
     
 }
@@ -270,14 +261,17 @@ extension CYFMHomeRecommendController: CYFMRecommendHeaderCellDelegate {
 //MARK: - 点击猜你喜欢cell代理方法
 extension CYFMHomeRecommendController: CYFMRecommendGuessLikeCellDelegate {
     func recommendGuessLikeCellItemClick(model: CYFMRecommendListModel) {
-         print("点击猜你喜欢")
+        #warning("测试")
+        let webView = CYFMWebViewController(url: "https://www.baidu.com")
+        webView.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(webView, animated: true)
     }
 }
 
 //MARK: - 点击热门有声书等cell代理方法
 extension CYFMHomeRecommendController: CYFMHotAudiobookCellDelegate {
     func hotAudiobookCellItemClick(model: CYFMRecommendListModel) {
-        print("点击热门有声书")
+        CYFMHelperTool.showCustomTextWarning(text: "点击热门有声书")
     }
 }
 
