@@ -46,16 +46,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 tabbarController, viewController, index in
             
             DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
-                let warning = MessageView.viewFromNib(layout: .cardView)
-                warning.configureTheme(.warning)
-                warning.configureDropShadow()
-                
-                let iconText = ["🤔", "😳", "🙄", "😶"].cy_random()
-                warning.configureContent(title: "Warning", body: "暂无此功能", iconText: iconText!)
-                warning.button?.isHidden = true
-                var warningConfig = SwiftMessages.defaultConfig
-                warningConfig.presentationContext = .window(windowLevel: .statusBar)
-                SwiftMessages.show(config: warningConfig, view: warning)
+                CYFMHelperTool.showNoFunctionWarning()
             }
         }
         

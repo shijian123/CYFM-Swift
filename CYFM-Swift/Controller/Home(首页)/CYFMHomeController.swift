@@ -35,7 +35,7 @@ class CYFMHomeController: CYBaseController {
             addChild(vc)
         }
         
-        let pageView = PageView(frame: CGRect(x: 0, y: CYFMNavBarHeight, width: CYFMScreenWidth, height: CYFMScreenHeight - CYFMNavBarHeight - 44), style: style, titles: titles, childViewControllers: viewControllers)
+        let pageView = PageView(frame: view.bounds, style: style, titles: titles, childViewControllers: viewControllers)
         pageView.contentView.backgroundColor = .yellow
         view.addSubview(pageView)
         

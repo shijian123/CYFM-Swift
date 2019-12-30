@@ -168,7 +168,7 @@ extension CYFMHomeVIPController: UITableViewDelegate, UITableViewDataSource {
 
 extension CYFMHomeVIPController: CYFMHomeVipBannerCellDelegate {
     func homeVipBannerCellClick(url: String) {
-        self.showNoFunctionWarning()
+        CYFMHelperTool.showNoFunctionWarning()
     }
 }
 
@@ -180,19 +180,25 @@ extension CYFMHomeVIPController: CYFMHomeVipCategoriesCellDelegate {
             vc.title = title
             navigationController?.pushViewController(vc, animated: true)
         }else {
-//            let vc = CYFMweb
+            let vc = CYFMWebViewController(url: url)
+            vc.title = title
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
 
+// - 点击Vip尊享课item delegate
 extension CYFMHomeVIPController: CYFMHomeVipHotCellDelegate {
     func homeVipHotCellItemClick(model: CYFMCategoryContents) {
-        
+        let vc = CYFMPlayDetailController(albumId: model.albumId)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
+// - 点击热播item delegate
 extension CYFMHomeVIPController: CYFMHomeVipEnjoyCellDelegate {
     func homeVipEnjoyCellItemClick(model: CYFMCategoryContents) {
-        
+        let vc = CYFMPlayDetailController(albumId: model.albumId)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

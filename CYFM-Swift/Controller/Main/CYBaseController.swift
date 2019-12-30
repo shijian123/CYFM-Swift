@@ -7,31 +7,16 @@
 //
 
 import UIKit
-import SwiftMessages
 
 class CYBaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        edgesForExtendedLayout = []
         // Do any additional setup after loading the view.
     }
     
-    
-    /// 暂无此功能弹窗
-    func showNoFunctionWarning() {
-        let warningView = MessageView.viewFromNib(layout: .cardView)
-        warningView.configureTheme(.warning)
-        warningView.configureDropShadow()
-        
-        let iconText = ["🤔", "😳", "🙄", "😶"].cy_random()!
-        warningView.configureContent(title: "Warning", body: "暂时没有点击动能", iconText: iconText)
-        warningView.button?.isHidden = true
-        var warningConfig = SwiftMessages.defaultConfig
-        warningConfig.presentationContext = .window(windowLevel: UIWindow.Level.statusBar)
-        SwiftMessages.show(config: warningConfig, view: warningView)
-    }
-
     /*
     // MARK: - Navigation
 

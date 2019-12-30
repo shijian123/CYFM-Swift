@@ -8,6 +8,11 @@
 
 import UIKit
 
+let CYFMHomeLiveSectionGrid     = 0   // 分类section
+let CYFMHomeLiveSectionBanner   = 1   // 滚动图片section
+let CYFMHomeLiveSectionRank     = 2   // 排行榜section
+let CYFMHomeLiveSectionLive     = 3   // 直播section
+
 class CYFMHomeLiveController: CYBaseController {
 
     override func viewDidLoad() {
