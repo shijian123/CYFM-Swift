@@ -31,8 +31,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func setupTabBarStyle(delegate: UITabBarControllerDelegate?) -> ESTabBarController {
         let tabBarCont = ESTabBarController()
         tabBarCont.delegate = delegate
-        tabBarCont.title = ""
+        tabBarCont.title = "Irregularity"
         tabBarCont.tabBar.shadowImage = UIImage(named: "tab_transparent")
+        tabBarCont.tabBar.backgroundColor = .white
+
         tabBarCont.shouldHijackHandler = {
             tabbarController, viewController, index in
             if index == 2 {

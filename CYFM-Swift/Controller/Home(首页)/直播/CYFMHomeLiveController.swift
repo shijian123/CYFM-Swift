@@ -25,10 +25,10 @@ class CYFMHomeLiveController: CYBaseController {
         let layout = UICollectionViewFlowLayout()
         
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionV.backgroundColor = .white
         collectionV.delegate = self
         collectionV.dataSource = self
         collectionV.showsVerticalScrollIndicator = false
-        
         collectionV.register(CYFMHomeLiveHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CYFMHomeLiveHeaderViewID)
         
         collectionV.register(CYFMHomeLiveGridCell.self, forCellWithReuseIdentifier: CYFMHomeLiveGridCellID)
@@ -153,6 +153,7 @@ extension CYFMHomeLiveController: CYFMHomeLiveGridCellDelegate {
     func homeLiveGridCellItemClick(channelId: Int, title: String) {
         let vc = CYFMLiveCategoryListController(channelId: channelId)
         vc.title = title
+        vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
     }
 }

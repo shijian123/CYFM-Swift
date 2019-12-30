@@ -29,7 +29,7 @@ class CYFMLiveRankCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        backgroundColor = .white
         addSubview(self.titleLab)
         self.titleLab.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(10)
@@ -63,7 +63,8 @@ class CYFMLiveRankCell: UICollectionViewCell {
             guard let model = multidimensionalRankVos else {
                 return
             }
-            
+            self.titleLab.text = model.dimensionName
+
             let num: Int = model.ranks?.count ?? 0
             let margin = 50
             

@@ -28,6 +28,7 @@ class CYFMLiveCategoryListController: CYBaseController {
         layout.minimumInteritemSpacing = 10.0
         layout.itemSize = CGSize(width: (CYFMScreenWidth - 40)/2, height: 230)
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionV.backgroundColor = .white
         collectionV.delegate = self
         collectionV.dataSource = self
         collectionV.showsVerticalScrollIndicator = false

@@ -23,12 +23,13 @@ class CYFMHomeVipEnjoyCell: UITableViewCell {
         layout.minimumLineSpacing = 5.0
         layout.minimumInteritemSpacing = 5.0
         layout.itemSize = CGSize(width: (CYFMScreenWidth - 50) / 3, height: self.frame.size.height)
-        let colllectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        colllectionV.delegate = self
-        colllectionV.dataSource = self
-        colllectionV.alwaysBounceVertical = true
-        colllectionV.register(CYFMVipEnjoyCell.self, forCellWithReuseIdentifier: CYFMVipEnjoyCellID)
-        return colllectionV
+        let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionV.backgroundColor = .white
+        collectionV.delegate = self
+        collectionV.dataSource = self
+        collectionV.alwaysBounceVertical = true
+        collectionV.register(CYFMVipEnjoyCell.self, forCellWithReuseIdentifier: CYFMVipEnjoyCellID)
+        return collectionV
         
     }()
     

@@ -27,6 +27,7 @@ class CYFMHomeVipCategoriesCell: UITableViewCell {
         layout.scrollDirection = .horizontal
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionV.contentSize = CGSize(width: CYFMScreenWidth, height: 80)
+        collectionV.backgroundColor = .white
         collectionV.delegate = self
         collectionV.dataSource = self
         collectionV.showsVerticalScrollIndicator = false

@@ -19,9 +19,10 @@ class CYFMHomeLiveRankCell: UICollectionViewCell {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
-        
+        layout.scrollDirection = .horizontal
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionV.contentSize = CGSize(width: (CYFMScreenWidth - 30), height: self.frame.size.height)
+        collectionV.backgroundColor = .white
         collectionV.delegate = self
         collectionV.dataSource = self
         collectionV.showsVerticalScrollIndicator = false
@@ -65,7 +66,7 @@ extension CYFMHomeLiveRankCell: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CYFMLiveRankCell = collectionView.dequeueReusableCell(withReuseIdentifier: CYFMLiveRankCellID, for: indexPath) as! CYFMLiveRankCell
-        cell.backgroundColor = UIColor(red: 248/255.0, green: 245/255.0, blue: 246/255/0, alpha: 1.0)
+        cell.backgroundColor = UIColor(red: 248/255.0, green: 245/255.0, blue: 246/255.0, alpha: 1.0)
         cell.multidimensionalRankVos = self.multidimensionalRankVosList?[indexPath.row%(self.multidimensionalRankVosList?.count)!]
         return cell
     }

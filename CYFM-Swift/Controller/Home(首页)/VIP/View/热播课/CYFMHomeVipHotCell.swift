@@ -27,6 +27,7 @@ class CYFMHomeVipHotCell: UITableViewCell {
         layout.minimumInteritemSpacing = 5.0
         layout.itemSize = CGSize(width: (CYFMScreenWidth-50) / 3, height: self.frame.size.height)
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionV.backgroundColor = .white
         collectionV.delegate = self
         collectionV.dataSource = self
         collectionV.alwaysBounceVertical = true
