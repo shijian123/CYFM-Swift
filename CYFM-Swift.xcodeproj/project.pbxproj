@@ -56,6 +56,16 @@
 		B421B2582356FECF00912BB3 /* CYFMRecommendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B421B2572356FECF00912BB3 /* CYFMRecommendAPI.swift */; };
 		B44AF4DA23B38141009581FA /* CYFMWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AF4D923B38141009581FA /* CYFMWebViewController.swift */; };
 		B44AF54823B4921E009581FA /* CYFMHomeLiveBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AF54723B4921E009581FA /* CYFMHomeLiveBannerCell.swift */; };
+		B455AFA823BAEDEA00A4FE69 /* CYFMHomeBroadcastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFA723BAEDEA00A4FE69 /* CYFMHomeBroadcastAPI.swift */; };
+		B455AFAA23BAEE2100A4FE69 /* CYFMBroadcastListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFA923BAEE2100A4FE69 /* CYFMBroadcastListController.swift */; };
+		B455AFAC23BAEE4F00A4FE69 /* CYFMHomeBroadcastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFAB23BAEE4F00A4FE69 /* CYFMHomeBroadcastModel.swift */; };
+		B455AFAE23BAEE6900A4FE69 /* CYFMHomeBroadcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFAD23BAEE6900A4FE69 /* CYFMHomeBroadcastViewModel.swift */; };
+		B455AFB023BAEE8D00A4FE69 /* CYFMHomeRadiosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFAF23BAEE8D00A4FE69 /* CYFMHomeRadiosCell.swift */; };
+		B455AFB323BAEEBB00A4FE69 /* CYFMRadioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFB223BAEEBB00A4FE69 /* CYFMRadioHeaderView.swift */; };
+		B455AFB523BAEECF00A4FE69 /* CYFMRadioFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFB423BAEECF00A4FE69 /* CYFMRadioFooterView.swift */; };
+		B455AFB723BAEEF100A4FE69 /* CYFMRadioCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFB623BAEEF100A4FE69 /* CYFMRadioCategoriesCell.swift */; };
+		B455AFB923BAEF0300A4FE69 /* CYFMRadioSquareResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFB823BAEF0300A4FE69 /* CYFMRadioSquareResultsCell.swift */; };
+		B455AFBB23BAEF1300A4FE69 /* CYFMRadioSquareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455AFBA23BAEF1300A4FE69 /* CYFMRadioSquareCell.swift */; };
 		B462E9EE2366E6380031EAEA /* CYFMHomeClassifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9ED2366E6380031EAEA /* CYFMHomeClassifyAPI.swift */; };
 		B462E9F02366EB6B0031EAEA /* CYFMHomeClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9EF2366EB6B0031EAEA /* CYFMHomeClassifyModel.swift */; };
 		B462E9F42366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462E9F32366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift */; };
@@ -194,6 +204,16 @@
 		B421B2572356FECF00912BB3 /* CYFMRecommendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRecommendAPI.swift; sourceTree = "<group>"; };
 		B44AF4D923B38141009581FA /* CYFMWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMWebViewController.swift; sourceTree = "<group>"; };
 		B44AF54723B4921E009581FA /* CYFMHomeLiveBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeLiveBannerCell.swift; sourceTree = "<group>"; };
+		B455AFA723BAEDEA00A4FE69 /* CYFMHomeBroadcastAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeBroadcastAPI.swift; sourceTree = "<group>"; };
+		B455AFA923BAEE2100A4FE69 /* CYFMBroadcastListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMBroadcastListController.swift; sourceTree = "<group>"; };
+		B455AFAB23BAEE4F00A4FE69 /* CYFMHomeBroadcastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeBroadcastModel.swift; sourceTree = "<group>"; };
+		B455AFAD23BAEE6900A4FE69 /* CYFMHomeBroadcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeBroadcastViewModel.swift; sourceTree = "<group>"; };
+		B455AFAF23BAEE8D00A4FE69 /* CYFMHomeRadiosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeRadiosCell.swift; sourceTree = "<group>"; };
+		B455AFB223BAEEBB00A4FE69 /* CYFMRadioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRadioHeaderView.swift; sourceTree = "<group>"; };
+		B455AFB423BAEECF00A4FE69 /* CYFMRadioFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRadioFooterView.swift; sourceTree = "<group>"; };
+		B455AFB623BAEEF100A4FE69 /* CYFMRadioCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRadioCategoriesCell.swift; sourceTree = "<group>"; };
+		B455AFB823BAEF0300A4FE69 /* CYFMRadioSquareResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRadioSquareResultsCell.swift; sourceTree = "<group>"; };
+		B455AFBA23BAEF1300A4FE69 /* CYFMRadioSquareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMRadioSquareCell.swift; sourceTree = "<group>"; };
 		B462E9ED2366E6380031EAEA /* CYFMHomeClassifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyAPI.swift; sourceTree = "<group>"; };
 		B462E9EF2366EB6B0031EAEA /* CYFMHomeClassifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyModel.swift; sourceTree = "<group>"; };
 		B462E9F32366ED8B0031EAEA /* CYFMHomeClassifyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFMHomeClassifyHeaderView.swift; sourceTree = "<group>"; };
@@ -828,6 +848,7 @@
 		B40E8CD72356B38E0026F1FF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B455AFAD23BAEE6900A4FE69 /* CYFMHomeBroadcastViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -835,6 +856,10 @@
 		B40E8CD82356B3950026F1FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B455AFB123BAEE9300A4FE69 /* 单元格 */,
+				B455AFBC23BAEF5C00A4FE69 /* 组头尾 */,
+				B455AFBD23BAEF7A00A4FE69 /* 头部分类 */,
+				B455AFBE23BAEF8300A4FE69 /* 头部更多分类 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -842,6 +867,7 @@
 		B40E8CD92356B39E0026F1FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B455AFAB23BAEE4F00A4FE69 /* CYFMHomeBroadcastModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -849,6 +875,7 @@
 		B40E8CDA2356B3A50026F1FF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B455AFA723BAEDEA00A4FE69 /* CYFMHomeBroadcastAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -856,8 +883,43 @@
 		B40E8CDB2356B3AB0026F1FF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B455AFA923BAEE2100A4FE69 /* CYFMBroadcastListController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B455AFB123BAEE9300A4FE69 /* 单元格 */ = {
+			isa = PBXGroup;
+			children = (
+				B455AFAF23BAEE8D00A4FE69 /* CYFMHomeRadiosCell.swift */,
+			);
+			path = "单元格";
+			sourceTree = "<group>";
+		};
+		B455AFBC23BAEF5C00A4FE69 /* 组头尾 */ = {
+			isa = PBXGroup;
+			children = (
+				B455AFB223BAEEBB00A4FE69 /* CYFMRadioHeaderView.swift */,
+				B455AFB423BAEECF00A4FE69 /* CYFMRadioFooterView.swift */,
+			);
+			path = "组头尾";
+			sourceTree = "<group>";
+		};
+		B455AFBD23BAEF7A00A4FE69 /* 头部分类 */ = {
+			isa = PBXGroup;
+			children = (
+				B455AFB623BAEEF100A4FE69 /* CYFMRadioCategoriesCell.swift */,
+			);
+			path = "头部分类";
+			sourceTree = "<group>";
+		};
+		B455AFBE23BAEF8300A4FE69 /* 头部更多分类 */ = {
+			isa = PBXGroup;
+			children = (
+				B455AFB823BAEF0300A4FE69 /* CYFMRadioSquareResultsCell.swift */,
+				B455AFBA23BAEF1300A4FE69 /* CYFMRadioSquareCell.swift */,
+			);
+			path = "头部更多分类";
 			sourceTree = "<group>";
 		};
 		B4846F8423ACB6D300AE1BF1 /* 直播 */ = {
@@ -1416,16 +1478,20 @@
 				B4846FB323ACB6D400AE1BF1 /* CYFMHomeLiveGridCell.swift in Sources */,
 				B4846FCD23ACB7EB00AE1BF1 /* CYFMHomeVipHotCell.swift in Sources */,
 				B40E8BF32355AE6C0026F1FF /* CYReplicatorLayer.swift in Sources */,
+				B455AFBB23BAEF1300A4FE69 /* CYFMRadioSquareCell.swift in Sources */,
 				B462EA04236823180031EAEA /* CYFMClassifySubMenuModel.swift in Sources */,
 				B40E8BEA2355ADF40026F1FF /* WRNavigationBar.swift in Sources */,
 				B4C7CDAF237414DB00FF6A2D /* CYFMPlayAnchorCell.swift in Sources */,
 				B40E8CC32356B05B0026F1FF /* CYFMHomeRecommendController.swift in Sources */,
 				B462EA08236823510031EAEA /* CYFMClassifySubCategoryCell.swift in Sources */,
 				B49AABA92351BF78007FD8DC /* CYFMConst.swift in Sources */,
+				B455AFB923BAEF0300A4FE69 /* CYFMRadioSquareResultsCell.swift in Sources */,
 				B40B4AC323580B8D00171ECF /* CYFMOneKeyListenCell.swift in Sources */,
 				B44AF54823B4921E009581FA /* CYFMHomeLiveBannerCell.swift in Sources */,
 				B4846FD523ACB86D00AE1BF1 /* CYFMHomeVipHeaderView.swift in Sources */,
 				B4846FB123ACB6D400AE1BF1 /* CYFMHomeLiveModel.swift in Sources */,
+				B455AFB523BAEECF00A4FE69 /* CYFMRadioFooterView.swift in Sources */,
+				B455AFA823BAEDEA00A4FE69 /* CYFMHomeBroadcastAPI.swift in Sources */,
 				B4CA7994236AC4F1006DFEAC /* CYFMClassifySubModuleType17Cell.swift in Sources */,
 				B462EA00236822E80031EAEA /* CYFMClassifySubRecommendController.swift in Sources */,
 				B40B4ABF23580B5800171ECF /* CYRecommendForYouCell.swift in Sources */,
@@ -1433,11 +1499,13 @@
 				B40E8CD62356B12E0026F1FF /* CYFMHomeBroadcastController.swift in Sources */,
 				B40B4A9B2357038A00171ECF /* CYFMRecommendModel.swift in Sources */,
 				B49AAB502351B286007FD8DC /* ViewController.swift in Sources */,
+				B455AFAE23BAEE6900A4FE69 /* CYFMHomeBroadcastViewModel.swift in Sources */,
 				B40E8BB72355A3080026F1FF /* CYFMBasicContentView.swift in Sources */,
 				B40E8BCD2355ACA80026F1FF /* CYFMListenController.swift in Sources */,
 				B40B4AAF23580A8000171ECF /* CYFMRecommendHeaderView.swift in Sources */,
 				B40E8BDD2355AD5E0026F1FF /* CYFMPlayController.swift in Sources */,
 				B462E9F82366EF590031EAEA /* CYFMHomeClassifyCell.swift in Sources */,
+				B455AFAA23BAEE2100A4FE69 /* CYFMBroadcastListController.swift in Sources */,
 				B4C7CDA72374147B00FF6A2D /* CYFMPlayDetailController.swift in Sources */,
 				B4C7CDBA2376954300FF6A2D /* CYFMHelperTool.swift in Sources */,
 				B462E9FA2366F2670031EAEA /* CYFMHomeClassifyViewModel.swift in Sources */,
@@ -1451,6 +1519,7 @@
 				B4CA799C236AC58E006DFEAC /* CYFMClassifySubHeaderCell.swift in Sources */,
 				B4846FBC23ACB6D400AE1BF1 /* CYFMHomeVIPController.swift in Sources */,
 				B40E8BF52355AF0D0026F1FF /* CYFMCustomLabel.swift in Sources */,
+				B455AFB323BAEEBB00A4FE69 /* CYFMRadioHeaderView.swift in Sources */,
 				B40E8BEC2355ADF40026F1FF /* WRProxy.swift in Sources */,
 				B4C7CDA12374143000FF6A2D /* CYFMPlayModel.swift in Sources */,
 				B4846FDC23ACB8E700AE1BF1 /* CYFMHomeVipCategoriesCell.swift in Sources */,
@@ -1486,11 +1555,13 @@
 				B40E8CCA2356B0B40026F1FF /* CYFMHomeClassifyController.swift in Sources */,
 				B421B2582356FECF00912BB3 /* CYFMRecommendAPI.swift in Sources */,
 				B40E8BBF2355ABEC0026F1FF /* CYFMFindController.swift in Sources */,
+				B455AFB723BAEEF100A4FE69 /* CYFMRadioCategoriesCell.swift in Sources */,
 				B44AF4DA23B38141009581FA /* CYFMWebViewController.swift in Sources */,
 				B4846FB923ACB6D400AE1BF1 /* CYFMHomeLiveAPIProvider.swift in Sources */,
 				B40B4AA923571BA600171ECF /* CYFMHotAudiobookCell.swift in Sources */,
 				B462E9F02366EB6B0031EAEA /* CYFMHomeClassifyModel.swift in Sources */,
 				B40B4AB923580B1300171ECF /* CYFMRecommendGuessLikeCell.swift in Sources */,
+				B455AFAC23BAEE4F00A4FE69 /* CYFMHomeBroadcastModel.swift in Sources */,
 				B49AAB4E2351B286007FD8DC /* SceneDelegate.swift in Sources */,
 				B462EA0A2368236B0031EAEA /* CYFMClassifySubHorizontalCell.swift in Sources */,
 				B4C7CDAB237414B400FF6A2D /* CYFMPlayCommentCell.swift in Sources */,
@@ -1511,6 +1582,7 @@
 				B4846FAF23ACB6D400AE1BF1 /* CYFMHomeLiveController.swift in Sources */,
 				B4C7CDB32374151A00FF6A2D /* CYFMPlayFooterView.swift in Sources */,
 				B40B4AC723580BB800171ECF /* CYFMHomeRecommendLiveCell.swift in Sources */,
+				B455AFB023BAEE8D00A4FE69 /* CYFMHomeRadiosCell.swift in Sources */,
 				B40E8BEB2355ADF40026F1FF /* WRCustomNavigationBar.swift in Sources */,
 				B40B4AC523580BA000171ECF /* CYOneKeyListenCell.swift in Sources */,
 				B4CA799A236AC520006DFEAC /* CYFMClassifySubModuleType23Cell.swift in Sources */,
